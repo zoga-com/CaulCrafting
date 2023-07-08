@@ -25,7 +25,7 @@ public class BlockPistonExtendListener implements Listener {
 			Location loc = block.getLocation();
 			for(UUID uuid : plugin.caulLoc.keySet()) {
 				Location caul = plugin.caulLoc.get(uuid);
-				if(caul.getBlock().getLocation().distance(loc) == 0) {
+				if(loc.getWorld() == caul.getWorld() && caul.getBlock().getLocation().distance(loc) == 0) {
 					e.setCancelled(true);
 					return;
 				}

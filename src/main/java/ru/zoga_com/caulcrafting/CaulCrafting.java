@@ -38,8 +38,6 @@ public class CaulCrafting extends JavaPlugin implements Listener {
 	@Override
 	public void onEnable(){
 		ConfigurationSerialization.registerClass(CraftArray.class);
-	/*public HashMap<Player,Integer> editor = new HashMap<Player,Integer>();
-	public HashMap<Player,CraftArray> craft = new HashMap<Player,CraftArray>();*/
 		//Save data folder
 		CaulCrafting.dataFolder = this.getDataFolder();
 		//Commands executors
